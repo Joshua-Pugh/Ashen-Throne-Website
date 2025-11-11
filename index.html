@@ -39,6 +39,13 @@
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
     }
+    /* Change layout for moblie */
+    @media (max-width: 900px) {
+        header {
+            background-attachment: scroll !important; 
+            background-position: center bottom;
+        }
+      }
 
     header .brand { margin-bottom: 8px; }
     header .cta.primary { margin-top: 24px; transform: translateY(6px); }
