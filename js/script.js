@@ -117,12 +117,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const essenceData = {
     oath: {
-      img: "/assets/images/Ashenfield_War_Ram.jpg",
+      img: "/assets/images/Early_look - Ashenfield_War_Ram_Mock_up.png",
       title: "Oath — Ashenfield War Ram",
       body: "Noble siege engines that reward precise, disciplined assaults."
     },
     fury: {
-      img: "/assets/images/Bonecrusher_Catapult.png",
+      img: "/assets/images/Bonecrusher_Catapult_Concept_Card.png",
       title: "Fury — Bonecrusher Catapult",
       body: "Brute war machines built to erase walls and morale."
     },
