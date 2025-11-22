@@ -6,113 +6,9 @@
   <title>Ashen Throne — Command Siege</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#0e0f12; --card:#17191f; --ink:#e7e7ea; --muted:#a6abb6;
-      --gold:#cfb26a; --accent:#e8d49b; --line:#2a2d36;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;background:radial-gradient(1000px 600px at 70% -10%, #1c1f27 0%, var(--bg) 60%) fixed;color:var(--ink);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}
-    a{color:var(--accent);text-decoration:none}
-    /* HERO */
-    header {
-        position: relative;
-        min-height: 90vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        border-bottom: 1px solid var(--line);
-        color: var(--ink);
-        background:
-           linear-gradient(180deg,
-            rgba(16,18,23,0.30),
-            rgba(16,18,23,0.65) 60%,
-            rgba(16,18,23,0.70)),
-           url("/assets/images/Crown_Logo_Concept.png") center / cover no-repeat fixed;
-        padding-top: calc(40px + env(safe-area-inset-top));
-        padding-left: env(safe-area-inset-left);
-        padding-right: env(safe-area-inset-right);
-        /* Use 'env()' for modern iOS/Android, and 'constant()' for older iOS support */
-        padding-top: calc(40px + constant(safe-area-inset-top)); 
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
-    /* Change layout for moblie */
-    @media (max-width: 900px) {
-        header {
-            background-attachment: scroll !important; 
-            background-position: center bottom;
-        }
-      }
-
-    header .brand { margin-bottom: 8px; }
-    header .cta.primary { margin-top: 24px; transform: translateY(6px); }
-
-    .brand {
-        font-family: Cinzel, serif;
-        font-weight: 700;
-        font-size: 44px;
-        margin-bottom: 6px;
-        letter-spacing: 0.5px;
-    }
-    
-    .tag {
-        color: var(--muted);
-        font-size: 17px;
-        margin: 2px 0 4px;
-    }
-    
-    .lore-line {
-        margin-top: 2px;
-        font-size: 15px;
-        color: rgba(207,178,106,0.7);
-        font-style: italic;
-        letter-spacing: 0.4px;
-        text-shadow: 0 0 6px rgba(207,178,106,0.25);
-    }
-
-    .cta{margin:24px 8px 0; display:inline-block; padding:12px 20px; border:1px solid var(--gold); border-radius:6px}
-    .cta.primary {
-        margin-top: 16px;
-        transform: translateY(4px);
-    }
-    
-    .wrap{max-width:1080px;margin:0 auto;padding:40px 20px}
-    section{margin:40px 0; padding:28px; background:linear-gradient(180deg,#191b21,#14161b); border:1px solid var(--line); border-radius:14px}
-    h2{font-family:Cinzel,serif; margin:0 0 10px}
-    .grid{display:grid; gap:16px}
-    .grid.cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
-    .grid.cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}
-    .grid.cols-5{ grid-template-columns:repeat(5,minmax(0,1fr)); }
-    @media (max-width:1200px){ .grid.cols-5{ grid-template-columns:repeat(3,1fr); } }
-    @media (max-width:720px){ .grid.cols-5{ grid-template-columns:repeat(2,1fr); } }
-    @media (max-width:900px){ .grid.cols-2{grid-template-columns:1fr} .grid.cols-4{grid-template-columns:repeat(2,1fr)} }
-    .card{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px}
-    .icon{width:72px;height:72px;object-fit:contain; filter:drop-shadow(0 0 6px rgba(207,178,106,.25))}
-    .ess-name{font-weight:600;margin-top:8px}
-    .muted{color:var(--muted)}
-    .list>li{margin:8px 0}
-    #status h3, #status h4 {
-      font-family: Cinzel, serif;
-      margin-bottom: 6px;
-    }
-    #status .card {
-      transition: transform 0.2s ease, box-shadow 0.3s ease;
-    }
-    #status .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 0 10px rgba(207,178,106,0.25);
-    }
-    footer{padding:40px 20px;color:var(--muted);text-align:center}
-    .form{display:grid; gap:12px; max-width:520px; margin:10px auto 0}
-    input,button{font:inherit}
-    input{padding:12px 14px;border-radius:8px;border:1px solid var(--line);background:#101217;color:var(--ink)}
-    button{padding:12px 16px;border-radius:8px;border:1px solid #a48946;background:linear-gradient(180deg,#3b3221,#2b2519);color:var(--ink);cursor:pointer}
-    small{color:var(--muted)}
-  </style>
+  <link href="/css/styles.css" rel="stylesheet">
 </head>
+
 <body>
   <header>
     <div class="brand">ASHEN THRONE</div>
@@ -124,38 +20,69 @@
   </header>
 
   <main class="wrap">
+    <!-- ============================== -->
+    <!-- THE LEY SECTION                -->
+    <!-- ============================== -->
     <section id="ley">
       <h2>The Ley</h2>
-      <p class="muted">A living current beneath Gursol. Factions carve their futures into it — with vows, rage, trickery, and ash.</p>
+      <p class="muted">
+        A living current beneath Gursol. Factions carve their futures into it — with vows, rage, trickery, and ash.
+      </p>
+
       <div class="grid cols-5">
-        <div class="card" style="text-align:center">
+        <!-- Oath / Nobles -->
+        <div class="card ess-card" data-essence="oath" style="text-align:center">
           <img class="icon" src="/assets/images/Oath_Icon.png" alt="Oath icon">
           <div class="ess-name">Oath ◆</div>
           <div class="muted">Vows etched in stone and soul; order binds power to purpose.</div>
         </div>
-        <div class="card" style="text-align:center">
+
+        <!-- Fury / Brutes -->
+        <div class="card ess-card" data-essence="fury" style="text-align:center">
           <img class="icon" src="/assets/images/Fury_Icon.png" alt="Fury icon">
           <div class="ess-name">Fury ▲</div>
           <div class="muted">Molten will, hammered into war. Strength is the only law obeyed.</div>
         </div>
-        <div class="card" style="text-align:center">
+
+        <!-- Veil / Tricksters -->
+        <div class="card ess-card" data-essence="veil" style="text-align:center">
           <img class="icon" src="/assets/images/Veil_Icon.png" alt="Veil icon">
           <div class="ess-name">Veil ☽</div>
           <div class="muted">Masks, whispers, and the current between truths.</div>
         </div>
-        <div class="card" style="text-align:center">
+
+        <!-- Ash / Outcasts -->
+        <div class="card ess-card" data-essence="ash" style="text-align:center">
           <img class="icon" src="/assets/images/Ash_Icon.png" alt="Ash icon">
           <div class="ess-name">Ash ⬟</div>
           <div class="muted">What survives the fire learns to burn brighter.</div>
         </div>
-        <div class="card" style="text-align:center">
-            <img class="icon" src="/assets/images/Untuned_Icon.png" alt="Untuned essence icon">
-            <div class="ess-name">Untuned ✦</div>
-            <div class="muted">Raw ley energy—unbound, unpledged, usable by any faction.</div>
+
+        <!-- Untuned -->
+        <div class="card ess-card" data-essence="untuned" style="text-align:center">
+          <img class="icon" src="/assets/images/Untuned_Icon.png" alt="Untuned essence icon">
+          <div class="ess-name">Untuned ✦</div>
+          <div class="muted">Raw ley energy—unbound, unpledged, usable by any faction.</div>
+        </div>
+      </div> <!-- end .grid -->
+
+      <!-- Essence preview panel -->
+      <div id="essence-preview" class="essence-preview card">
+        <div class="essence-preview-image">
+          <img id="essencePreviewImg" src="/assets/cards/preview-default.png" alt="Ashen Throne card preview">
+        </div>
+        <div class="essence-preview-text">
+          <h3 id="essencePreviewTitle">Hover or tap an Essence</h3>
+          <p id="essencePreviewBody" class="muted">
+            Explore the factions of Ashen Throne. Each Essence has its own engine, tactics, and rare cards.
+          </p>
         </div>
       </div>
     </section>
 
+    <!-- ============================== -->
+    <!-- ABOUT SECTION                  -->
+    <!-- ============================== -->
     <section id="about">
       <h2>About the Game</h2>
       <div class="grid cols-2">
@@ -175,13 +102,15 @@
       </div>
     </section>
 
+    <!-- ============================== -->
+    <!-- STATUS SECTION                 -->
+    <!-- ============================== -->
     <section id="status">
       <h2>Development Status</h2>
       <p class="muted">
         Tracking the current progress of <strong>Ashen Throne</strong> game modes and starter factions.
       </p>
-      
-      <!-- Game Modes -->
+
       <div class="grid cols-2">
         <div class="card" style="text-align:center">
           <h3>⚔️ Command Siege</h3>
@@ -191,6 +120,7 @@
             Core mechanics and Ley system under active playtest review.
           </p>
         </div>
+
         <div class="card" style="text-align:center">
           <h3>🛡️ Battle Siege</h3>
           <p><strong>Status:</strong> <span style="color:#a6abb6">In Development</span></p>
@@ -200,11 +130,11 @@
           </p>
         </div>
       </div>
-      
-      <!-- Faction Progress -->
-       <h3 style="margin-top:40px; text-align:center; color:var(--accent); font-family:Cinzel,serif;">
+
+      <h3 style="margin-top:40px; text-align:center; color:var(--accent); font-family:Cinzel,serif;">
         Faction Progress
       </h3>
+
       <div class="grid cols-4">
         <div class="card" style="text-align:center">
           <h4>Nobles</h4>
@@ -229,58 +159,76 @@
       </div>
     </section>
 
+    <!-- ============================== -->
+    <!-- PLAYTEST SIGNUP                -->
+    <!-- ============================== -->
     <section id="signup">
       <h2>Playtest Signup</h2>
       <p>Sign up to receive the Playtest Kit now!</p>
+
       <form class="form" id="playtest-form"
         action="https://docs.google.com/forms/d/e/1FAIpQLScy8LROp4jMJNK9JLsdZcnnbXxFssRyQefOiTOJyULBlAg_EQ/formResponse"
         method="POST">
-        <input type="text"  name="entry.2138078700" placeholder="Your name" required>
+
+        <input type="text" name="entry.2138078700" placeholder="Your name" required>
         <input type="email" name="entry.1395089297" placeholder="Email address" required>
         <button type="submit">Request Playtest Kit</button>
+
         <small>We only use your email for Ashen Throne playtesting and launch updates. Unsubscribe anytime.</small>
+
         <p id="thankyou" style="display:none; color:#e8d49b; font-style:italic; margin-top:10px;">
           ✦ Thank you, tactician. The Ley stirs — your kit will arrive shortly.
         </p>
       </form>
-      <script>
-        const form = document.getElementById('playtest-form');
-        const thankyou = document.getElementById('thankyou');
-        form.addEventListener('submit', (e) => {
-        
-          // hide the form fields after submission
-          e.preventDefault();
-          const formData = new FormData(form);
-          fetch(form.action, { method: 'POST', body: formData, mode: 'no-cors' })
-          .then(() => {
-            form.reset();
-            thankyou.style.display = 'block';
-            thankyou.style.opacity = 0;
-            setTimeout(() => thankyou.style.transition = 'opacity 1s', 10);
-            setTimeout(() => thankyou.style.opacity = 1, 50);
-
-            setTimeout(() => {
-                // Fade out the message
-                thankyou.style.opacity = 0;
-
-                // After the fade out transition (1 second), hide the element completely
-                setTimeout(() => {
-                    thankyou.style.display = 'none';
-                }, 1000); // Matches the 'opacity 1s' transition time
-
-            }, 5000);
-          })
-          .catch(() => {
-            alert('Something went wrong — please try again later.');
-          });
-        });
-      </script>
     </section>
   </main>
 
   <footer>
     © <span id="y"></span> Ashen Forge Games • Wield the Ley. Claim the crown.
   </footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Floating Contact Button -->
+  <button class="contact-fab" id="contactFab" aria-label="Contact us">✉️</button>
+
+  <!-- Contact Modal -->
+  <div class="contact-modal" id="contactModal" aria-hidden="true">
+    <div class="contact-modal-backdrop" id="contactBackdrop"></div>
+    <div class="contact-modal-content">
+      <button class="contact-modal-close" id="contactClose" aria-label="Close contact form">✕</button>
+
+      <h2>Contact Ashen Forge Games</h2>
+      <p>Questions, feedback, or playtest interest? Send us a message.</p>
+
+      <form class="contact-form" id="contact-form">
+        <label>
+          Name (optional)
+          <input type="text" name="name" />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          Subject
+          <input type="text" name="subject" required />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+
+        <button type="submit" class="contact-submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="/js/script.js"></script>
 </body>
 </html>
