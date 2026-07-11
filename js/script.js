@@ -1,38 +1,4 @@
 // =========================
-// PLAYTEST FORM SUBMISSION
-// =========================
-const form = document.getElementById('playtest-form');
-const thankyou = document.getElementById('thankyou');
-
-if (form && thankyou) {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const formData = new FormData(form);
-
-    fetch(form.action, { method: 'POST', body: formData, mode: 'no-cors' })
-      .then(() => {
-        form.reset();
-        thankyou.style.display = 'block';
-        thankyou.style.opacity = 0;
-
-        setTimeout(() => (thankyou.style.transition = 'opacity 1s'), 10);
-        setTimeout(() => (thankyou.style.opacity = 1), 50);
-
-        setTimeout(() => {
-          thankyou.style.opacity = 0;
-          setTimeout(() => {
-            thankyou.style.display = 'none';
-          }, 1000);
-        }, 5000);
-      })
-      .catch(() => {
-        alert('Something went wrong — please try again later.');
-      });
-  });
-}
-
-
-// =========================
 // PAGE INTERACTIVITY
 // =========================
 document.addEventListener('DOMContentLoaded', function () {
