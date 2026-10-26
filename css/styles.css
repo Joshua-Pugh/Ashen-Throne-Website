@@ -385,3 +385,15 @@ a:focus-visible,button:focus-visible{outline:3px solid #e8d49b;outline-offset:4p
 
 header .hero-actions .cta{margin:12px 0 0;transform:none;display:inline-flex;align-items:center;justify-content:center;min-height:50px}header h1.brand{margin-top:0}
 
+
+/* Match DuelTheory's ivory desk, forest green and restrained gold accents. */
+:root{--bg:#eee6d2;--card:#f7f1e3;--ink:#25352d;--muted:#58614c;--gold:#94702e;--accent:#31533a;--line:#b4a789}
+body{background:var(--bg);font-family:"Segoe UI",Arial,sans-serif}
+header{color:#f3eddb;min-height:75vh;border-bottom:3px solid #ad8539}header .tag{color:#e1dac4}header .brand{color:#f7edcc}header .lore-line{color:#d1bd80;text-shadow:none}header .hero-play-note{color:#f3eddb}header .studio-credit{color:#e1c789}header .cta{color:#eee0b9;border-color:#c5a354}
+header .cta.primary{color:#18291f}
+section{background:#f7f1e3;border-radius:4px;box-shadow:none}.card{border-radius:4px;background:#f2ead8}
+h2,h3,h4{color:#214531}.section-label{color:#765c29}.play-online{background:#14382b;color:#f3eddb}.play-online :is(h2,.section-label){color:#e8d49b}.play-online .muted{color:#cbd3c1}.play-online .cta{color:#ebdeb7}.play-online .primary{color:#18291f}
+#status .card:hover{transform:none;box-shadow:none}.status-playable{color:#2d5e35;font-weight:700}
+.essence-cards{align-items:start}.essence-cards .ess-card{padding:9px;text-align:center;background:#e8dfc8;border-color:#b4a17b}.essence-card-art{display:block;width:100%;height:auto;aspect-ratio:5/7;object-fit:contain;border-radius:4px;filter:none}.card-art-link{display:block}.essence-cards .ess-name{font:700 16px Georgia,serif;color:#274a33;margin:14px 0 8px}.essence-cards p{font-size:13px;line-height:1.5;margin:8px 0}.card-view-note{font-size:13px;color:#58614c}.at-social-links{display:flex;justify-content:center;flex-wrap:wrap;gap:12px 22px;margin:0 0 20px}.at-social-links a{text-decoration:underline;text-underline-offset:4px}footer{border-top:1px solid #b4a789;color:#58614c}
+.contact-modal-content{background:#f7f1e3;color:#25352d}.contact-modal-content :is(input,textarea){background:#fff9e9;color:#25352d;border-color:#a79a7b}.contact-modal-content .contact-modal-close{color:#25352d}
+@media(max-width:720px){.wrap{padding:20px 12px}section{padding:20px 15px}.essence-cards{gap:12px}.essence-cards .ess-name{font-size:15px}.essence-cards .ess-card{padding:7px}header .brand{font-size:clamp(32px,10vw,44px)}}
