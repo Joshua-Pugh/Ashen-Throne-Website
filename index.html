@@ -3,7 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ashen Throne — Command Siege</title>
+  <title>Ashen Throne — A Card Game by Ashen Forge Games</title>
+  <meta name="description" content="Ashen Throne is an original fantasy card game by Ashen Forge Games. Play the Brute and Noble Command Siege prototype decks on DuelTheory, locally or in a private room." />
+  <meta name="author" content="Ashen Forge Games" />
+  <meta property="og:title" content="Ashen Throne — Ashen Forge Games" />
+  <meta property="og:description" content="Wield the Ley. Claim the crown. Play the Command Siege prototype on DuelTheory, from the same studio." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ashenthronetcg.com/" />
+  <link rel="canonical" href="https://ashenthronetcg.com/" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link href="/css/styles.css" rel="stylesheet">
@@ -11,15 +18,36 @@
 
 <body>
   <header>
-    <div class="brand">ASHEN THRONE</div>
+    <p class="studio-credit">An original card game by Ashen Forge Games</p>
+    <h1 class="brand">ASHEN THRONE</h1>
     <div class="tag">Wield the Ley. Claim the crown.</div>
     <div class="lore-line">Every crown is forged from the bones of the fallen.</div>
-    <div>
-      <a class="cta primary" href="#status">Status</a>
-    </div>
+    <p class="hero-play-note">The Command Siege prototype is now playable on DuelTheory.</p>
+    <nav class="hero-actions" aria-label="Explore Ashen Throne">
+      <a class="cta primary" href="https://dueltheory.com/#/ashen">Play on DuelTheory</a>
+      <a class="cta" href="#playtesting">How to play online</a>
+      <a class="cta" href="#status">Development status</a>
+    </nav>
   </header>
 
   <main class="wrap">
+    <section id="play-online" class="play-online" aria-labelledby="play-online-title">
+      <div>
+        <p class="section-label">COMMAND SIEGE · DIGITAL PLAYTEST</p>
+        <h2 id="play-online-title">Bring your forces to DuelTheory</h2>
+        <p>Play the Brute and Noble prototype decks on one device, or invite a friend to a private room. Both players can choose either deck.</p>
+        <p class="muted">DuelTheory and Ashen Throne are both developed by Ashen Forge Games. The digital prototype is free to play in your browser.</p>
+        <div class="play-actions">
+          <a class="cta primary" href="https://dueltheory.com/#/ashen">Open Ashen Throne</a>
+          <a class="cta" href="https://dueltheory.com/#/private/ashen">Create or join a private match</a>
+        </div>
+      </div>
+      <a class="dt-studio-link" href="https://dueltheory.com/#/about" aria-label="About DuelTheory and Ashen Forge Games">
+        <img src="/assets/branding/dt-wordmark.svg" alt="DuelTheory" width="300" height="76" />
+        <span>From Ashen Forge Games</span>
+        <small>The home of the Ashen Throne digital prototype</small>
+      </a>
+    </section>
     <!-- ============================== -->
     <!-- THE LEY SECTION                -->
     <!-- ============================== -->
@@ -69,7 +97,7 @@
       <!-- Essence preview panel -->
       <div id="essence-preview" class="essence-preview card">
         <div class="essence-preview-image">
-          <img id="essencePreviewImg" src="/assets/cards/preview-default.png" alt="Ashen Throne card preview">
+          <img id="essencePreviewImg" src="/assets/images/New_Card_Dev.png" alt="Ashen Throne card preview">
         </div>
         <div class="essence-preview-text">
           <h3 id="essencePreviewTitle">Hover or tap an Essence</h3>
@@ -90,14 +118,14 @@
           <ul class="list">
             <li>Tactical fantasy TCG with Ley Fonts as your resource engine.</li>
             <li>Five card types: Units, Runes, Relics, Strategies, Tactics.</li>
-            <li>Starter factions: Nobles, Brutes, Tricksters, Outcasts.</li>
+            <li>Playable prototype factions: Nobles and Brutes. Tricksters and Outcasts are in development.</li>
             <li>Objective: Reduce the enemy Command Station to 0.</li>
           </ul>
         </div>
         <div class="card">
           <strong>Playtime</strong>: 25–40 minutes • <strong>Learn</strong>: 15 minutes<br/>
-          <strong>Status</strong>: Project on hold.<br/>
-          <strong>Playtesting</strong>: Closed for now while development is paused.
+          <strong>Status</strong>: Command Siege prototype in active development.<br/>
+          <strong>Playtesting</strong>: Available on <a href="https://dueltheory.com/#/ashen">DuelTheory</a>.
         </div>
       </div>
     </section>
@@ -108,25 +136,25 @@
     <section id="status">
       <h2>Development Status</h2>
       <p class="muted">
-        <strong>Ashen Throne</strong> is currently on hold. Playtesting signups are closed while the project is paused.
+        <strong>Ashen Throne</strong> is in active development at Ashen Forge Games. Our current focus is Command Siege: testing card interactions, refining the rules, and improving the digital play experience on DuelTheory.
       </p>
 
       <div class="grid cols-2">
         <div class="card" style="text-align:center">
           <h3>⚔️ Command Siege</h3>
-          <p><strong>Status:</strong> <span style="color:#a6abb6">Testing Closed - On Hold</span></p>
+          <p><strong>Status:</strong> <span class="status-playable">Playable prototype</span></p>
           <p class="muted">
-            <strong>Nobles</strong> and <strong>Brutes</strong> starter decks are under refinement.<br>
-            Further testing is currently closed while the team reviews next steps.
+            <strong>Nobles</strong> and <strong>Brutes</strong> are available on DuelTheory.<br>
+            Play locally or in a private match while we continue testing and refining the game.
           </p>
         </div>
 
         <div class="card" style="text-align:center">
           <h3>🛡️ Battle Siege</h3>
-          <p><strong>Status:</strong> <span style="color:#a6abb6">On Hold</span></p>
+          <p><strong>Status:</strong> <span class="muted">Not in the current playtest</span></p>
           <p class="muted">
             Large-scale siege mode featuring fortress assaults and faction alliances.<br>
-            Early design phase paused until the project returns to active development.
+            A separate mode in early design. It is not included in the current digital prototype.
           </p>
         </div>
       </div>
@@ -160,21 +188,27 @@
     </section>
 
     <!-- ============================== -->
-    <!-- TESTING CLOSED NOTICE          -->
+    <!-- PLAYTEST ACCESS                -->
     <!-- ============================== -->
     <section id="playtesting">
-      <h2>Testing Closed</h2>
-      <p>The open playtesting period has concluded.</p>
-
-      <div class="card" style="text-align:center">
-        <p><strong>Project status:</strong> <span style="color:#a6abb6">On Hold</span></p>
-        <p class="muted">The project has been placed on hold. No release date is set. We appreciate the community's interest and will post updates if development resumes.</p>
-      </div>
+      <h2>Play the Prototype</h2>
+      <ol class="play-steps">
+        <li><a href="https://dueltheory.com/#/ashen">Open Ashen Throne on DuelTheory</a> to view the rules, cards, and Play option.</li>
+        <li>Choose a local duel for two players on one device, or create a private AT match and share the join link with a friend.</li>
+        <li>Pick your decks. In a private room, both players press Ready before the coin flip.</li>
+      </ol>
+      <p class="muted">Rules and keyword references are available inside the duel. The prototype is still being tested; card interactions and the interface may change.</p>
+      <p>Found a problem? Tell us which cards were involved, what happened, and what you expected. Email <a href="mailto:designteam@ashenforgegames.com">designteam@ashenforgegames.com</a>.</p>
+    </section>
+    <section id="studio">
+      <h2>From Ashen Forge Games</h2>
+      <p>Ashen Throne is our original tabletop card game, set in the world of Gursol. We built DuelTheory to help playtest it and share it with players online.</p>
+      <p>Both projects are developed under Ashen Forge Games. <a href="https://dueltheory.com/#/about">Read how DuelTheory began</a>.</p>
     </section>
   </main>
 
   <footer>
-    © <span id="y"></span> Ashen Forge Games • Wield the Ley. Claim the crown.
+    © <span id="y"></span> Ashen Forge Games · Ashen Throne<br><a href="https://dueltheory.com/#/ashen">Play on DuelTheory</a> · Wield the Ley. Claim the crown.
   </footer>
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
@@ -222,3 +256,5 @@
   <script src="/js/script.js"></script>
 </body>
 </html>
+
+

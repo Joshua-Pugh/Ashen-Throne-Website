@@ -367,3 +367,21 @@ small{color:var(--muted)}
     text-align: center;
   }
 }
+/* Digital playtest access, with the studio connection visible on both screens. */
+.studio-credit,.section-label{font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:#e8d49b}
+.studio-credit{margin:0 20px 18px}.hero-play-note{max-width:560px;margin:20px 20px 0;color:#f3eddb}
+.hero-actions,.play-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.hero-actions{padding:0 20px 30px}.hero-actions .cta,.play-actions .cta{margin:12px 0 0;transform:none}
+.hero-actions .primary,.play-actions .primary{background:#d3b566;color:#18291f;font-weight:600}
+.cta:hover{background:#3b4433}.cta.primary:hover{background:#e7c87a;color:#18291f}
+a:focus-visible,button:focus-visible{outline:3px solid #e8d49b;outline-offset:4px}
+.play-online{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:28px;align-items:center;border-color:#8e7745;background:#142a22;border-radius:6px}
+.play-online .section-label{margin-top:0}.play-actions{justify-content:flex-start}.play-online p{max-width:660px}
+.dt-studio-link{display:flex;flex-direction:column;gap:10px;align-items:center;text-align:center;padding:24px 10px;border-left:1px solid #71816b}
+.dt-studio-link img{display:block;width:100%;max-width:280px;height:auto}.dt-studio-link span{color:#eee1bb;font-size:14px}.dt-studio-link small{color:#c4cdbd;font-size:12px}
+.status-playable{color:#c2e0b4;font-weight:600}.play-steps{padding-left:24px}.play-steps li{padding:6px 0}
+#playtesting a:not(.cta),#studio a,#about .card a{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:720px){.play-online{grid-template-columns:minmax(0,1fr);gap:18px;padding:22px 18px}.dt-studio-link{border-left:0;border-top:1px solid #71816b;padding:22px 10px 0}.hero-actions{gap:8px}.hero-actions .cta{padding:12px 15px}.studio-credit{font-size:11px}.play-actions .cta{width:100%;text-align:center}}
+
+header .hero-actions .cta{margin:12px 0 0;transform:none;display:inline-flex;align-items:center;justify-content:center;min-height:50px}header h1.brand{margin-top:0}
+
